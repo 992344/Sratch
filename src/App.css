@@ -66,3 +66,17 @@ input{
 }
 
 
+.main-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.right-side {
+  
+  height: 100%;
+  margin-left: 12rem;
+}
+

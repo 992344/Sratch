@@ -9,7 +9,7 @@ const Home = () => {
           <Link class="navbar-brand" to='ProductManagement' >
            <img src={process.env.PUBLIC_URL+"icons/navbarSymboll.png"} style={{ width: 40, height: 40, paddingBottom:9 }} />
 
-           <img src={process.env.PUBLIC_URL+"icons/navbarLogo.png"} style={{ width: 280, height: 35, paddingLeft:9 ,paddingBottom:9}} />
+           <img src={process.env.PUBLIC_URL+"icons/navbarLogo.png"} style={{ width: 200, height:40, paddingLeft:9 ,paddingBottom:9}} />
 
           </Link>
           <span
@@ -17,7 +17,7 @@ const Home = () => {
             style={{ textDecoration: "none" }}
           >
           
-          <img src={process.env.PUBLIC_URL+"icons/loginImage2.png"} style={{width:35 ,height:35, justifyContent:'center',paddingBottom:5}} />
+          <img src={process.env.PUBLIC_URL+"icons/loginImage2.png"} style={{width:33 ,height:35, justifyContent:'center',paddingBottom:5}} />
  
           
           </span>

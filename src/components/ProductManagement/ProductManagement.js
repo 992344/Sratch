@@ -3,14 +3,7 @@ import React from 'react'
 const ProductManagement = () => {
   return (
     <div>
-      <span>helloo</span>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <span>hello</span>
+      <h1>Product</h1>
     </div>
   )
 }
