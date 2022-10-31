@@ -23,9 +23,8 @@ const App = () => {
      </div>
     <div className="right-side">
     <Routes>
-      {/* <Route path="/" element={<Home />} /> */}
-      
-      
+  
+      {/* keep all the routes here */}
       <Route path="/signin" element={<Signin />} />
       <Route path="/" element={<Main />} />
     </Routes>
