@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState,useEffect}from "react";
 import Signin from "./components/signin/Signin";
 import { Route, Routes , Router, RouterProvider,useLocation } from "react-router-dom";
 import Sidebar from "./components/Home/Sidebar";
@@ -16,14 +16,20 @@ import Supplierpo from "./components/SupplierPO/Supplierpo";
 import Addnewproduct from "./components/ProductManagement/Addnewproduct";
 import Addnewsuplierdetails from "./components/SupplierManagement/Addnewsupplierdetails";
 const App = () => {
+  
+  
   const location = useLocation()
-  console.log(location.pathname)
+const pathname = location.pathname
+
+console.log(pathname)
+
+  
   return (
     <div className="App">
       <div className="main-area">
        
         <div className="left-side">
-          location.pathname!=="/sigin"&&<Navbar />
+          {pathname.match("/signin")?null:<Navbar/>}
           <Sidebar />
         </div>
         <div className="right-side">

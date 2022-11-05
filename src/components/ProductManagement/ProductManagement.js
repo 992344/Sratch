@@ -1,16 +1,20 @@
 import React from "react";
 import "../styles/productmanagement.css";
 import {useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Addnewproduct from "./Addnewproduct";
+import Succesmodal from "../Modal/Succesmodal";
 
 const ProductManagement = () => {
-  const navigate = useNavigate();
-
+  const [show,setShow]=useState(true)
+  const [showModal,setShowModal]=useState(false)
 const handleClick=()=> {
-    navigate("/addnewproduct")
+    setShow(true)
   }
   
 
   return (
+    <>
     <div>
       <div>
         <span id="heading">
@@ -78,6 +82,9 @@ const handleClick=()=> {
         </table>
       </div>
     </div>
+    {show&&<Addnewproduct setShow={setShow} setShowModal={setShowModal}/>}
+    {showModal&&(<Succesmodal setShowModal={setShowModal}/>)}
+    </>
   );
 };
 

@@ -24,11 +24,17 @@ const Sidebar = () => {
             </span>
             <span> Product Management</span>{" "}
           </Link>
-          <a href="#" className="list-group-item" data-bs-parent="#sidebar">
+          <a href="#" className="list-group-item sidebar_link" data-bs-parent="#sidebar">
+            <div>
             <span>
               <img src={process.env.PUBLIC_URL + "icons/Location.png"} />
             </span>
             <span> Location</span>
+            </div>
+            <div>
+            {">"}
+            </div>
+            
           </a>
           <a href="#" className="list-group-item" data-bs-parent="#sidebar">
             <span>

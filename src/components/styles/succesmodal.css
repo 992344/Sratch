@@ -10,3 +10,8 @@ text-align: center;
     background-color: #C9C9C9;
     margin-top: 5%;
 }
+
+.success-modal{
+    width: 300px;
+    height: 300px;
+}

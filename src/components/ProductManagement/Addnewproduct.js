@@ -1,14 +1,23 @@
 import React from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Succesmodal from "../Modal/Succesmodal";
 import "../styles/addnewproduct.css";
-const Addnewproduct = () => {
+const Addnewproduct = ({setShow,setShowModal}) => {
   const navigate = useNavigate();
+  
   const handleCancleClick = () => {
     navigate(-1);
   };
+  const saveData=()=>{
+    // data saving
+    setShow(false)
+    setShowModal(true)
+  }
   return (
-    <div>
+    <>
+    <div className="black-screen" onClick={()=>setShow(false)}>
+    <div className="modal-area" onClick={(e)=>e.stopPropagation()}>
       <div className="AddNewHeading">
         <h5>Add New Product</h5>
       </div>
@@ -56,7 +65,7 @@ const Addnewproduct = () => {
             <button
               type="button"
               class="btn p-1 btn-outline-secondary"
-              onClick={() => handleCancleClick()}
+              onClick={()=>setShow(false)}
             >
               Cancle
             </button>
@@ -81,13 +90,16 @@ const Addnewproduct = () => {
           <input type="text" class="form-control p-1" />
 
           <div className="save d-grid gap-2 col-6 mx-auto">
-            <i onClick={() => console.log(13)}>
-              <Succesmodal openButtonText="Save" />
-            </i>
+              
+          <button  class="btn p-1 btn-outline-secondary" onClick={saveData} >Save</button>
           </div>
         </div>
       </div>
     </div>
+    </div>
+  
+    
+    </>
   );
 };
 
