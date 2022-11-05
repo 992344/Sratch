@@ -1,41 +1,41 @@
 import React from "react";
 import "../styles/productmanagement.css";
-import {useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const ProductManagement = () => {
-  const navigate = useNavigate();
 
-const handleClick=()=> {
-    navigate("/addnewproduct")
+const SupplierManagement = () => {
+  const navigate=useNavigate();
+  const handleClick=()=> {
+    navigate("/addnewsuplierdetails")
   }
-  
-
   return (
     <div>
       <div>
         <span id="heading">
-         <span> <img src="/icons/pm.png" alt="logo" /> </span>
-          <h5>Product Management</h5>
-        </span>
-        
-        <button onClick={()=>handleClick()} id="addbutton">Add New</button>
-        
+         <span> <img src="/icons/supman1.png" alt="logo" /> </span>
+          <span><h5> Supplier Management</h5></span>
+        </span>   
+        <button id="addbutton"  onClick={()=>handleClick()} >Add New</button>
       </div>
       <div>
         <table id="customers">
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Product Name</th>
-            <th scope="col">Discription</th>
-            <th scope="col">Weight</th>
-            <th scope="col">Packing</th>
-            <th scope="col">Status</th>
+            <th scope="col"> Name</th>
+            <th scope="col">Mobile No.</th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+            <th scope="col">Pincode</th>
+            <th scope="col">Location</th>
+            <th scope="col">Satus</th>
             <th scope="col"></th>
             <th scope="col"></th>
           </tr>
           <tr>
             <td scope="row">1</td>
             <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
             <td>Otto</td>
             <td>@mdo</td>
             <td>Otto</td>
@@ -54,6 +54,8 @@ const handleClick=()=> {
             <td>@mdo</td>
             <td>Otto</td>
             <td>@mdo</td>
+            <td>Otto</td>
+            <td>@mdo</td>
             <td>
               <a href=""><img src="/icons/edit.ico" alt="logo" /></a>
             </td>
@@ -64,6 +66,8 @@ const handleClick=()=> {
           <tr>
             <td scope="row">3</td>
             <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
             <td>Otto</td>
             <td>@mdo</td>
             <td>Otto</td>
@@ -81,4 +85,4 @@ const handleClick=()=> {
   );
 };
 
-export default ProductManagement;
+export default SupplierManagement;

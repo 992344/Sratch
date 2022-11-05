@@ -1,0 +1,12 @@
+.Success-modal{
+    /* display: flex; */
+justify-content: center;
+text-align: center;
+/* align-items: center; */
+}
+.Success-modal button{
+    padding: 2% 12%;
+    border-radius: 15%;
+    background-color: #C9C9C9;
+    margin-top: 5%;
+}

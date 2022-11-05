@@ -3,9 +3,6 @@
     align-content: center;
     justify-content: center;
     margin-right: 20px;
-}
-.logo-component .main-logo img{
-    object-fit: contain;
-    margin-bottom: -53px;
-    margin-right: 10px;
+    margin-bottom: 15%;
+
 }
